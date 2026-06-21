@@ -132,26 +132,49 @@ export default function Hero() {
 
           {/* Right — product image */}
           <div className="relative flex items-center justify-center">
-            {/* Glow behind image */}
+            {/* Deep glow behind */}
             <div
-              className="absolute inset-0 rounded-full"
+              className="absolute rounded-full"
               style={{
-                background: 'radial-gradient(ellipse at center, rgba(63,135,254,0.2) 0%, transparent 70%)',
-                filter: 'blur(40px)',
+                width: '80%',
+                height: '80%',
+                background: 'radial-gradient(ellipse at center, rgba(63,135,254,0.25) 0%, transparent 70%)',
+                filter: 'blur(60px)',
+              }}
+            />
+
+            {/* Rotating ring accent */}
+            <div
+              className="absolute rounded-full border"
+              style={{
+                width: '85%',
+                height: '85%',
+                borderColor: 'rgba(63,135,254,0.12)',
+                animation: 'spin-slow 20s linear infinite',
+                borderStyle: 'dashed',
+              }}
+            />
+            <div
+              className="absolute rounded-full border"
+              style={{
+                width: '70%',
+                height: '70%',
+                borderColor: 'rgba(123,92,255,0.08)',
+                animation: 'spin-slow 14s linear infinite reverse',
               }}
             />
 
             <motion.div
-              className="relative w-full max-w-lg"
+              className="relative w-full max-w-lg z-10"
               style={{ y: imageY, scale: imageScale }}
               initial={{ opacity: 0, scale: 0.9, y: 30 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ delay: 1.5, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
-              {/* Floating animation wrapper */}
               <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                className="relative"
               >
                 <Image
                   src="/products/power-adapter/hero.png"
@@ -159,8 +182,18 @@ export default function Hero() {
                   width={600}
                   height={600}
                   priority
-                  className="w-full h-auto object-contain drop-shadow-2xl"
-                  style={{ filter: 'drop-shadow(0 40px 80px rgba(63,135,254,0.3))' }}
+                  className="w-full h-auto object-contain relative z-10"
+                  style={{
+                    filter: 'drop-shadow(0 40px 80px rgba(63,135,254,0.5)) drop-shadow(0 0 30px rgba(63,135,254,0.3))',
+                    mixBlendMode: 'screen',
+                  }}
+                />
+                {/* Edge fade mask to remove studio background */}
+                <div
+                  className="absolute inset-0 pointer-events-none z-20"
+                  style={{
+                    background: 'radial-gradient(ellipse at center, transparent 45%, var(--bg-void) 75%)',
+                  }}
                 />
               </motion.div>
             </motion.div>
@@ -168,7 +201,34 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Bottom gradient fade */}
+          {/* Floating spec badges */}
+          <motion.div
+            className="absolute right-4 lg:right-8 top-1/3 hidden lg:flex flex-col gap-3"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 2.2, duration: 0.6 }}
+          >
+            {[
+              { label: '140W MAX', color: '#3FE0FE' },
+              { label: 'GaN III', color: '#3F87FE' },
+              { label: 'PD 3.1', color: '#7B5CFF' },
+            ].map(({ label, color }) => (
+              <div
+                key={label}
+                className="px-3 py-1.5 rounded-full text-xs font-bold tracking-wider"
+                style={{
+                  background: `${color}12`,
+                  border: `1px solid ${color}40`,
+                  color,
+                  boxShadow: `0 0 16px ${color}25`,
+                }}
+              >
+                {label}
+              </div>
+            ))}
+          </motion.div>
+
+          {/* Bottom gradient fade */}
       <div
         className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
         style={{ background: 'linear-gradient(to bottom, transparent, var(--bg-void))' }}

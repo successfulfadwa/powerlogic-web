@@ -51,14 +51,33 @@ export default function AuroraBackground() {
         }}
       />
 
-      {/* Subtle noise overlay */}
+      {/* Dot grid */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.07]"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-          backgroundSize: '256px 256px',
+          backgroundImage: 'radial-gradient(circle, rgba(63,135,254,0.6) 1px, transparent 1px)',
+          backgroundSize: '40px 40px',
         }}
       />
+
+      {/* Horizontal scan line */}
+      <div
+        className="absolute left-0 right-0 h-px pointer-events-none"
+        style={{
+          background: 'linear-gradient(90deg, transparent, rgba(63,135,254,0.5), rgba(63,224,254,0.3), transparent)',
+          animation: 'scan-line 8s ease-in-out infinite',
+          top: '30%',
+        }}
+      />
+
+      <style>{`
+        @keyframes scan-line {
+          0% { transform: translateY(-40vh); opacity: 0; }
+          20% { opacity: 1; }
+          80% { opacity: 1; }
+          100% { transform: translateY(80vh); opacity: 0; }
+        }
+      `}</style>
     </div>
   );
 }
