@@ -61,13 +61,6 @@ body {
   color: var(--text-primary);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   overflow-x: hidden;
-  cursor: none;
-}
-
-@media (pointer: coarse) {
-  body {
-    cursor: auto;
-  }
 }
 
 /* Glass card base */
@@ -102,7 +95,7 @@ body {
   border: none;
   box-shadow: 0 0 40px rgba(63, 135, 254, 0.5), 0 4px 20px rgba(63, 135, 254, 0.3);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
-  cursor: none;
+  
   position: relative;
   overflow: hidden;
   display: inline-flex;
@@ -127,7 +120,7 @@ body {
   border: 1px solid var(--glass-border);
   backdrop-filter: blur(16px);
   transition: background 0.3s ease, border-color 0.3s ease;
-  cursor: none;
+  
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
