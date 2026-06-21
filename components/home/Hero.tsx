@@ -183,6 +183,7 @@ export default function Hero() {
                   priority
                   className="w-full h-auto object-contain"
                   style={{
+                    mixBlendMode: 'screen',
                     filter: 'drop-shadow(0 30px 60px rgba(63,135,254,0.45)) drop-shadow(0 0 40px rgba(63,135,254,0.25))',
                   }}
                 />
