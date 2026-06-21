@@ -174,7 +174,6 @@ export default function Hero() {
               <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="relative"
               >
                 <Image
                   src="/products/power-adapter/hero.png"
@@ -182,17 +181,9 @@ export default function Hero() {
                   width={600}
                   height={600}
                   priority
-                  className="w-full h-auto object-contain relative z-10"
+                  className="w-full h-auto object-contain"
                   style={{
-                    filter: 'drop-shadow(0 40px 80px rgba(63,135,254,0.5)) drop-shadow(0 0 30px rgba(63,135,254,0.3))',
-                    mixBlendMode: 'screen',
-                  }}
-                />
-                {/* Edge fade mask to remove studio background */}
-                <div
-                  className="absolute inset-0 pointer-events-none z-20"
-                  style={{
-                    background: 'radial-gradient(ellipse at center, transparent 45%, var(--bg-void) 75%)',
+                    filter: 'drop-shadow(0 30px 60px rgba(63,135,254,0.45)) drop-shadow(0 0 40px rgba(63,135,254,0.25))',
                   }}
                 />
               </motion.div>
