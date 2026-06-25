@@ -66,17 +66,13 @@ export default function Navbar() {
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {(['Home', 'About', 'Contact'] as const).map((item) => (
-              <MagneticButton key={item} data-cursor="">
-                <Link
-                  href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                  className="text-sm font-medium tracking-wide transition-colors"
-                  style={{ color: 'var(--text-secondary)' }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-secondary)')}
-                >
-                  {item}
-                </Link>
-              </MagneticButton>
+              <Link
+                key={item}
+                href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                className="nav-link text-sm font-medium tracking-wide"
+              >
+                {item}
+              </Link>
             ))}
 
             {/* Products dropdown */}
@@ -86,8 +82,8 @@ export default function Navbar() {
               onMouseLeave={() => setProductsOpen(false)}
             >
               <button
-                className="flex items-center gap-1 text-sm font-medium tracking-wide transition-colors"
-                style={{ color: 'var(--text-secondary)', background: 'none', border: 'none', cursor: 'none' }}
+                className="nav-link flex items-center gap-1 text-sm font-medium tracking-wide"
+                style={{ background: 'none', border: 'none' }}
               >
                 Products <ChevronDown size={14} />
               </button>

@@ -22,14 +22,8 @@ export default function MagneticButton({
   const x = useSpring(rawX, { stiffness: 400, damping: 30 });
   const y = useSpring(rawY, { stiffness: 400, damping: 30 });
 
-  const handleMove = (e: MouseEvent) => {
-    if (!ref.current) return;
-    if (window.matchMedia('(pointer: coarse)').matches) return;
-    const rect = ref.current.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2;
-    const cy = rect.top + rect.height / 2;
-    rawX.set((e.clientX - cx) * strength);
-    rawY.set((e.clientY - cy) * strength);
+  const handleMove = (_e: MouseEvent) => {
+    // Magnetic movement disabled — buttons no longer jump
   };
 
   const handleLeave = () => {
