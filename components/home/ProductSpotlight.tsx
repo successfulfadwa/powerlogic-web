@@ -162,9 +162,11 @@ function SpotlightModule({ product, index }: { product: SpotlightProduct; index:
                   transition={{ delay: 0.3 + si * 0.1 }}
                   className="p-4 rounded-2xl"
                   style={{
-                    background: 'var(--glass-fill)',
-                    border: `1px solid ${product.accentColor}25`,
-                    boxShadow: `inset 0 1px 0 rgba(255,255,255,0.06)`,
+                    background: 'rgba(255,255,255,0.04)',
+                    border: `1px solid ${product.accentColor}30`,
+                    backdropFilter: 'blur(20px) saturate(140%)',
+                    WebkitBackdropFilter: 'blur(20px) saturate(140%)',
+                    boxShadow: `inset 0 1px 0 rgba(255,255,255,0.07), 0 4px 20px rgba(0,0,0,0.3), 0 0 20px ${product.accentColor}08`,
                   }}
                 >
                   <div className="text-xs mb-1 uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>

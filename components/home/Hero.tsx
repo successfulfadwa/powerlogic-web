@@ -41,27 +41,29 @@ export default function Hero() {
         }}
       />
 
-      {/* Bottom content — buttons + scroll only */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-20">
+      {/* Bottom content — glass panel + buttons */}
+      <div className="relative z-10 w-full pb-16">
         <motion.div
-          className="flex flex-wrap items-center gap-4"
-          initial={{ opacity: 0, y: 30 }}
+          className="max-w-7xl mx-auto px-6 lg:px-12"
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.3, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <MagneticButton>
-            <Link href="/products" className="btn-glow">
-              Shop Powerlogic
-              <ArrowRight size={16} />
-            </Link>
-          </MagneticButton>
+          <div className="flex flex-wrap items-center gap-4">
+            <MagneticButton>
+              <Link href="/products" className="btn-glow">
+                Shop Powerlogic
+                <ArrowRight size={16} />
+              </Link>
+            </MagneticButton>
 
-          <MagneticButton>
-            <Link href="/about" className="btn-ghost">
-              <Play size={14} />
-              Our Story
-            </Link>
-          </MagneticButton>
+            <MagneticButton>
+              <Link href="/about" className="btn-ghost">
+                <Play size={14} />
+                Our Story
+              </Link>
+            </MagneticButton>
+          </div>
         </motion.div>
       </div>
 

@@ -40,7 +40,20 @@ export default function ClosingCTA() {
         }}
       />
 
-      <div className="max-w-5xl mx-auto px-6 lg:px-12 text-center">
+      {/* Glass band */}
+      <div
+        className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-6 lg:mx-24 rounded-3xl pointer-events-none"
+        style={{
+          height: '70%',
+          background: 'rgba(255,255,255,0.02)',
+          border: '1px solid rgba(63,135,254,0.1)',
+          backdropFilter: 'blur(40px)',
+          WebkitBackdropFilter: 'blur(40px)',
+          boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06), 0 0 80px rgba(63,135,254,0.06)',
+        }}
+      />
+
+      <div className="max-w-5xl mx-auto px-6 lg:px-12 text-center relative z-10">
         {/* Stats row */}
         <motion.div
           className="flex flex-wrap items-center justify-center gap-16 mb-20"
@@ -114,3 +127,4 @@ export default function ClosingCTA() {
     </section>
   );
 }
+

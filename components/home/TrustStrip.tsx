@@ -14,9 +14,11 @@ function Badge({ Icon, text }: { Icon: React.ComponentType<{ size?: number; styl
     <div
       className="flex items-center gap-3 px-6 py-3 rounded-full flex-shrink-0"
       style={{
-        background: 'var(--glass-fill)',
-        border: '1px solid var(--glass-border)',
-        backdropFilter: 'blur(16px)',
+        background: 'rgba(255,255,255,0.05)',
+        border: '1px solid rgba(63,135,254,0.15)',
+        backdropFilter: 'blur(24px) saturate(150%)',
+        WebkitBackdropFilter: 'blur(24px) saturate(150%)',
+        boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.07), 0 4px 20px rgba(0,0,0,0.3)',
       }}
     >
       <Icon size={15} style={{ color: 'var(--brand-blue)' }} />
@@ -35,9 +37,12 @@ export default function TrustStrip() {
     <section
       className="py-6 relative overflow-hidden"
       style={{
-        borderTop: '1px solid var(--glass-border)',
-        borderBottom: '1px solid var(--glass-border)',
-        background: 'rgba(10,11,15,0.6)',
+        borderTop: '1px solid rgba(63,135,254,0.1)',
+        borderBottom: '1px solid rgba(63,135,254,0.1)',
+        background: 'rgba(5,6,10,0.7)',
+        backdropFilter: 'blur(20px)',
+        WebkitBackdropFilter: 'blur(20px)',
+        boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.04), inset 0 -1px 0 rgba(255,255,255,0.02)',
       }}
     >
       <MarqueeStrip speed={25} gap={20}>

@@ -41,12 +41,20 @@ export default function Navbar() {
         <div
           className="flex items-center justify-between"
           style={{
-            height: scrolled ? '64px' : '80px',
-            background: scrolled ? 'rgba(5,6,10,0.85)' : 'transparent',
-            backdropFilter: scrolled ? 'blur(16px) saturate(140%)' : 'none',
-            borderBottom: scrolled ? '1px solid rgba(255,255,255,0.08)' : '1px solid transparent',
-            borderRadius: '0 0 16px 16px',
-            transition: 'all 0.4s ease',
+            height: scrolled ? '62px' : '76px',
+            background: scrolled
+              ? 'rgba(5,6,10,0.75)'
+              : 'rgba(5,6,10,0.35)',
+            backdropFilter: 'blur(24px) saturate(160%)',
+            WebkitBackdropFilter: 'blur(24px) saturate(160%)',
+            borderBottom: scrolled
+              ? '1px solid rgba(63,135,254,0.15)'
+              : '1px solid rgba(255,255,255,0.06)',
+            borderRadius: '0 0 20px 20px',
+            boxShadow: scrolled
+              ? '0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06)'
+              : '0 4px 24px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.04)',
+            transition: 'all 0.5s ease',
           }}
         >
           {/* Logo */}

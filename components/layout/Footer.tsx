@@ -24,8 +24,11 @@ export default function Footer() {
     <footer
       className="relative overflow-hidden"
       style={{
-        background: 'var(--bg-panel)',
-        borderTop: '1px solid var(--glass-border)',
+        background: 'rgba(8,9,14,0.85)',
+        backdropFilter: 'blur(40px) saturate(150%)',
+        WebkitBackdropFilter: 'blur(40px) saturate(150%)',
+        borderTop: '1px solid rgba(63,135,254,0.12)',
+        boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.04)',
       }}
     >
       {/* Glow accent */}
@@ -148,7 +151,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div
           className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs"
-          style={{ borderTop: '1px solid var(--glass-border)', color: 'var(--text-muted)' }}
+          style={{ borderTop: '1px solid rgba(63,135,254,0.08)', color: 'var(--text-muted)' }}
         >
           <span>© 2021–2026 Powerlogic. All Rights Reserved.</span>
           <div className="flex gap-6">
