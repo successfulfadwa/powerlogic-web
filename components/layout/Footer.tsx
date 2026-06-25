@@ -40,11 +40,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-5">
-              <Image src="/brand/logo.png" alt="Powerlogic" width={36} height={36} className="rounded-full" />
-              <span className="font-bold text-lg" style={{ color: 'var(--text-primary)', fontWeight: 800 }}>
-                Powerlogic
-              </span>
+            <Link href="/" className="flex items-center mb-5">
+              <Image src="/brand/logo-main.png" alt="Powerlogic" width={140} height={42} className="h-9 w-auto object-contain" />
             </Link>
             <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--text-muted)' }}>
               Smart accessories engineered for how you actually live — on the road, at your desk, off the grid.

@@ -51,20 +51,15 @@ export default function Navbar() {
         >
           {/* Logo */}
           <MagneticButton data-cursor="Home">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center">
               <Image
-                src="/brand/logo.png"
+                src="/brand/logo-main.png"
                 alt="Powerlogic"
-                width={36}
-                height={36}
-                className="rounded-full"
+                width={160}
+                height={48}
+                className="h-10 w-auto object-contain"
+                priority
               />
-              <span
-                className="font-bold text-lg tracking-tight"
-                style={{ color: 'var(--text-primary)', fontWeight: 800 }}
-              >
-                Powerlogic
-              </span>
             </Link>
           </MagneticButton>
 

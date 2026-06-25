@@ -183,8 +183,6 @@ export default function Hero() {
                   priority
                   className="w-full h-auto object-contain"
                   style={{
-                    maskImage: 'radial-gradient(ellipse 75% 75% at 55% 50%, black 45%, transparent 78%)',
-                    WebkitMaskImage: 'radial-gradient(ellipse 75% 75% at 55% 50%, black 45%, transparent 78%)',
                     filter: 'drop-shadow(0 30px 60px rgba(63,135,254,0.45)) drop-shadow(0 0 40px rgba(63,135,254,0.25))',
                   }}
                 />
