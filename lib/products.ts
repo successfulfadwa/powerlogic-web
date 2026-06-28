@@ -33,7 +33,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Dual Motor E-Scooter',
     tagline: 'Built for roads that push back.',
     description: 'A high-torque urban ride with long-range confidence, designed for daily movement and tougher streets.',
-    heroImage: '/products/scooter/1hero.png',
+    heroImage: '/products/scooter/hero-p2.png',
     gallery: [
         '/products/scooter/hero-p2.png',
         '/products/scooter/alternate-p2.png',
@@ -60,7 +60,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'RGB Speaker',
     tagline: 'Sound that moves. Light that breathes.',
     description: 'A portable speaker with bold lighting, immersive sound, and a party-ready look.',
-    heroImage: '/products/speaker/hero.png',
+    heroImage: '/products/speaker/hero-p3.png',
     gallery: [
       '/products/speaker/hero-p3.png',
       '/products/speaker/alternate-p3.png',
@@ -87,7 +87,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Portable Power Station',
     tagline: 'The grid, untethered.',
     description: 'Compact backup power for travel, work, and outages, with a strong focus on reliability.',
-    heroImage: '/products/power-station/hero.png',
+    heroImage: '/products/power-station/hero-p8.png',
     gallery: [
         '/products/power-station/hero-p8.png',
         '/products/power-station/alternate-p8.png',
@@ -114,7 +114,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: '140W GaN Adapter',
     tagline: 'Maximum watts. Minimum footprint.',
     description: 'A compact GaN charger for fast, efficient charging across laptop and mobile devices.',
-    heroImage: '/products/power-adapter/hero.png',
+    heroImage: '/products/power-adapter/hero-p9.png,
     gallery: [
         '/products/power-adapter/hero-p9.png',
         '/products/power-adapter/alternate-p9.png',
@@ -141,7 +141,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: '20000mAh Power Bank',
     tagline: 'Reliable all-day backup.',
     description: 'A dependable high-capacity power bank for long days, travel, and backup charging.',
-    heroImage: '/products/power-bank/hero.png',
+    heroImage: '/products/power-bank/pb4/hero-p4.png',
     gallery: [
         '/products/power-bank/pb4/hero-p4.png',
         '/products/power-bank/pb4/alternate-p4.png',
@@ -168,7 +168,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: '20000mAh Slim Power Bank',
     tagline: 'Big capacity, slimmer profile.',
     description: 'A thinner form factor for users who want power without a bulky feel.',
-    heroImage: '/products/power-bank/slim-hero.png',
+    heroImage: '/products/power-bank/pb3/hero-p5.png',
     gallery: [
         '/products/power-bank/pb3/hero-p5.png',
         '/products/power-bank/pb3/alternate-p5.png',
@@ -195,7 +195,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: '25000mAh Power Bank with Built-In Cables',
     tagline: 'Carry fewer cables. Charge more devices.',
     description: 'An all-in-one power bank built for convenience, with integrated cables for fast access.',
-    heroImage: '/products/power-bank/builtin-hero.png',
+    heroImage: '/products/power-bank/pb2/hero-p6.png',
     gallery: [
         '/products/power-bank/pb2/hero-p6.png',
         '/products/power-bank/pb2/alternate-p6.png',
@@ -222,7 +222,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: '24000mAh Fast Charge Power Bank',
     tagline: 'High capacity for longer trips.',
     description: 'A high-output power bank focused on endurance, speed, and staying powered for longer.',
-    heroImage: '/products/power-bank/fast-hero.png',
+    heroImage: '/products/power-bank/pb1/hero-p7.png',
     gallery: [
         '/products/power-bank/pb1/hero-p7.png',
         '/products/power-bank/pb1/alternate-p7.png',
@@ -249,7 +249,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'ANC Earbuds',
     tagline: 'Focused listening for everyday life.',
     description: 'Noise-aware earbuds designed for commutes, calls, and everyday music use.',
-    heroImage: '/products/earbuds/hero.png',
+    heroImage: '/products/earbuds/hero-p1.png',
     gallery: [
         '/products/earbuds/hero-p1.png',
         '/products/earbuds/alternate-p1.png',
@@ -276,7 +276,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: '100W Fast Charging Cable',
     tagline: 'Fast, simple, and dependable.',
     description: 'A clean everyday cable built for high-speed charging and broad compatibility.',
-    heroImage: '/products/cables/hero.png',
+    heroImage: '/products/cables/c2/hero-p11.png',
     gallery: [
         '/products/cables/c2/hero-p11.png',
         '/products/cables/c2/alternate-p11.png',
@@ -303,7 +303,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: '3-in-1 Cable',
     tagline: 'One cable, multiple devices.',
     description: 'A versatile cable solution for mixed-device users and multi-device charging setups.',
-    heroImage: '/products/cables/3in1-hero.png',
+    heroImage: '/products/cables/c3/hero-p10.png',
     gallery: [
         '/products/cables/c3/hero-p10.png',
         '/products/cables/c3/alternate-p10.png',
@@ -330,7 +330,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Type-C Smart Display Cable',
     tagline: 'Charging status at a glance.',
     description: 'A cable with a smart display for users who want more feedback and a more premium feel.',
-    heroImage: '/products/cables/typec-hero.png',
+    heroImage: '/products/cables/c1/hero-p12.png',
     gallery: [
         '/products/cables/c1/hero-p12.png',
         '/products/cables/c1/alternate-p12.png',
@@ -356,7 +356,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Mop & Vacuum Robot',
     tagline: 'Let the floor do itself.',
     description: 'An automated cleaning solution for daily dust, spills, and routine floor maintenance.',
-    heroImage: '/products/cleaning/hero.png',
+    heroImage: '/products/cleaning/mop-robot/hero-p14.png',
     gallery: [
         '/products/cleaning/mop-robot/hero-p14.png',
         '/products/cleaning/mop-robot/alternate-p14.png',
@@ -383,7 +383,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Glass Cleaner Robot',
     tagline: 'For windows and hard-to-reach glass.',
     description: 'A specialized cleaning robot designed to tackle glass surfaces more safely and efficiently.',
-    heroImage: '/products/cleaning/glass-hero.png',
+    heroImage: '/products/cleaning/window-robot/hero-p13.png',
     gallery: [
         '/products/cleaning/window-robot/hero-p13.png',
         '/products/cleaning/window-robot/alternate-p13.png',
@@ -410,7 +410,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Mop & Vacuum Classic',
     tagline: 'A straightforward cleaning companion.',
     description: 'A classic floor-cleaning configuration for customers who want simple and dependable performance.',
-    heroImage: '/products/cleaning/mop-hero.png',
+    heroImage: '/products/cleaning/mop/hero-p15.png',
     gallery: [
         '/products/cleaning/mop/hero-p15.png',
         '/products/cleaning/mop/alternate-p15.png',
@@ -437,7 +437,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Android AI Box',
     tagline: 'Upgrade your infotainment system.',
     description: 'A smart car accessory that adds more flexibility, apps, and usability to your dashboard.',
-    heroImage: '/products/car-accessories/hero.png',
+    heroImage: '/products/car-accessories/ai-box/hero-p17.png',
     gallery: [
         '/products/car-accessories/ai-box/hero-p17.png',
         '/products/car-accessories/ai-box/alternate-p17.png',
@@ -464,7 +464,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Automatic Car Cover',
     tagline: 'Protection with less hassle.',
     description: 'An easy-to-present car cover solution that emphasizes convenience and vehicle protection.',
-    heroImage: '/products/car-accessories/cover-hero.png',
+    heroImage: '/products/car-accessories/car-cover/hero-p16.png',
     gallery: [
         '/products/car-accessories/car-cover/hero-p16.png',
         '/products/car-accessories/car-cover/alternate-p16.png',
@@ -491,7 +491,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Jump Starter & Tyre Inflator',
     tagline: 'Emergency support for the road.',
     description: 'A compact roadside-support accessory for jump starting and tyre inflation on the move.',
-    heroImage: '/products/car-accessories/jumpstart-hero.png',
+    heroImage: '/products/car-accessories/jump-starter/hero-p18.png',
     gallery: [
         '/products/car-accessories/jump-starter/hero-p18.png',
         '/products/car-accessories/jump-starter/alternate-p18.png',
