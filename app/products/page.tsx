@@ -32,7 +32,6 @@ export default function ProductsPage() {
 
   return (
     <div style={{ background: 'var(--bg-void)', minHeight: '100vh' }}>
-      {/* Header */}
       <section className="relative overflow-hidden pt-32 pb-20">
         <AuroraBackground />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center">
@@ -42,13 +41,15 @@ export default function ProductsPage() {
             className="text-xs font-semibold tracking-[0.2em] uppercase mb-6"
             style={{ color: 'var(--brand-blue)' }}
           >
-            Full Catalogue
+            Product Categories
           </motion.p>
           <h1
             className="font-black leading-tight mb-6"
             style={{ fontSize: 'var(--h1)', fontWeight: 900 }}
           >
-            <SplitText by="words" delay={0.2} stagger={0.08}>All Products</SplitText>
+            <SplitText by="words" delay={0.2} stagger={0.08}>
+              Browse by Category
+            </SplitText>
           </h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -57,12 +58,11 @@ export default function ProductsPage() {
             className="max-w-xl mx-auto"
             style={{ color: 'var(--text-secondary)', fontSize: 'var(--body-lg)' }}
           >
-            Nine categories. Every one engineered with the same obsession.
+            Choose a category to open its product collection, then tap any product to view its own page.
           </motion.p>
         </div>
       </section>
 
-      {/* Filter pills */}
       <div
         className="sticky top-20 z-40 py-4 px-6 lg:px-12"
         style={{
@@ -91,7 +91,6 @@ export default function ProductsPage() {
         </div>
       </div>
 
-      {/* Grid */}
       <section className="py-16 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,7 +108,6 @@ export default function ProductsPage() {
                     className="glass-card relative overflow-hidden group cursor-none"
                     style={{ minHeight: '320px' }}
                   >
-                    {/* Image */}
                     <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
                       <Image
                         src={cat.heroImage}
@@ -120,13 +118,11 @@ export default function ProductsPage() {
                       />
                     </div>
 
-                    {/* Gradient */}
                     <div
                       className="absolute inset-0"
                       style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, transparent 100%)' }}
                     />
 
-                    {/* Content */}
                     <div className="relative p-6 h-full flex flex-col justify-end" style={{ minHeight: '320px' }}>
                       <div
                         className="absolute top-5 right-5 w-9 h-9 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300"
