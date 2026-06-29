@@ -121,7 +121,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
                   transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                 >
                   <Image
-                    src={item.transparentImage}
+                    src={item.product.transparentImage}
                     alt={item.name}
                     width={500}
                     height={500}
