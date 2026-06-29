@@ -114,7 +114,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: '140W GaN Adapter',
     tagline: 'Maximum watts. Minimum footprint.',
     description: 'A compact GaN charger for fast, efficient charging across laptop and mobile devices.',
-    heroImage: '/products/power-adapter/hero-p9.png,
+    heroImage: '/products/power-adapter/hero-p9.png',
     gallery: [
         '/products/power-adapter/hero-p9.png',
         '/products/power-adapter/alternate-p9.png',
