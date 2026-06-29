@@ -5,10 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import AuroraBackground from '@/components/home/AuroraBackground';
 import SplitText from '@/components/ui/SplitText';
-import MagneticButton from '@/components/ui/MagneticButton';
 import { categories } from '@/lib/categories';
 import { getCategoryProducts } from '@/lib/products';
 
@@ -109,12 +108,6 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
                   </div>
                 </div>
               </div>
-
-              <MagneticButton data-cursor="Shop">
-                <Link href="/contact" className="btn-glow">
-                  Enquire Now <ArrowRight size={16} />
-                </Link>
-              </MagneticButton>
             </div>
 
             <motion.div
@@ -229,22 +222,6 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-6 lg:px-12 text-center" style={{ background: 'var(--bg-void)' }}>
-        <div className="max-w-2xl mx-auto">
-          <h3 className="font-black text-3xl mb-4" style={{ color: 'var(--text-primary)' }}>
-            Interested in {cat.name}?
-          </h3>
-          <p className="mb-8" style={{ color: 'var(--text-secondary)' }}>
-            Get in touch and our team will help you find the right product for your needs.
-          </p>
-          <MagneticButton data-cursor="Contact">
-            <Link href="/contact" className="btn-glow">
-              Get in Touch <ArrowRight size={16} />
-            </Link>
-          </MagneticButton>
         </div>
       </section>
     </div>
