@@ -174,7 +174,7 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
                   >
                     <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
                       <Image
-                        src={product.transparentImage}
+                        src={product.heroImage}
                         alt={product.name}
                         fill
                         className="object-cover opacity-55 group-hover:opacity-75 transition-opacity duration-500"
