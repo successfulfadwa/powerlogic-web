@@ -98,11 +98,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
                 ))}
               </div>
 
-              <MagneticButton data-cursor="Contact">
-                <Link href="/contact" className="btn-glow">
-                  Enquire Now <ArrowRight size={16} />
-                </Link>
-              </MagneticButton>
+
             </div>
 
             <motion.div
@@ -147,9 +143,6 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
               <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: item.accentColor }}>
                 Gallery
               </p>
-              <h2 className="font-bold text-2xl mb-6" style={{ color: 'var(--text-primary)' }}>
-                More angles of {item.name}
-              </h2>
               <div className="grid grid-cols-2 gap-4">
                 {item.gallery.map((src, index) => (
                   <div
@@ -182,25 +175,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
                 ))}
               </div>
 
-              <div
-                className="mt-8 p-6 rounded-3xl"
-                style={{
-                  background: `linear-gradient(135deg, ${item.accentColor}18, rgba(255,255,255,0.03))`,
-                  border: `1px solid ${item.accentColor}25`,
-                }}
-              >
-                <p className="text-sm mb-2 uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
-                  Next step
-                </p>
-                <p className="mb-5" style={{ color: 'var(--text-secondary)' }}>
-                  Talk to the team about availability, pricing, or a custom recommendation for this product.
-                </p>
-                <MagneticButton data-cursor="Contact">
-                  <Link href="/contact" className="btn-glow">
-                    Contact Us <ArrowRight size={16} />
-                  </Link>
-                </MagneticButton>
-              </div>
+
             </div>
           </div>
         </div>
