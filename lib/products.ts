@@ -7,6 +7,7 @@ export interface SpotlightProduct {
   id: string;
   name: string;
   tagline: string;
+  transparentImage: string;
   heroImage: string;
   accentColor: string;
   specs: Spec[];
@@ -538,7 +539,8 @@ export const spotlightProducts: SpotlightProduct[] = [
     id: 'scooter',
     name: 'Dual Motor E-Scooter',
     tagline: 'Built for roads that push back.',
-    heroImage: '/products/scooter/1hero.png',
+    transparentImage: '/products/transparent/p2.png',
+    heroImage: '/products/scooter/hero-p2.png',
     accentColor: '#3F87FE',
     specs: [
       { label: 'Drive System', value: 'Dual Motor' },
@@ -552,7 +554,8 @@ export const spotlightProducts: SpotlightProduct[] = [
     id: 'speaker',
     name: 'RGB Speaker',
     tagline: 'Sound that moves. Light that breathes.',
-    heroImage: '/products/speaker/hero.png',
+    transparentImage: '/products/transparent/p3.png',
+    heroImage: '/products/speaker/hero-p3.png',
     accentColor: '#7B5CFF',
     specs: [
       { label: 'Sound Stage', value: '360° Surround' },
@@ -566,7 +569,8 @@ export const spotlightProducts: SpotlightProduct[] = [
     id: 'power-station',
     name: 'Portable Power Station',
     tagline: 'The grid, untethered.',
-    heroImage: '/products/power-station/hero.png',
+    transparentImage: '/products/transparent/p8.png',
+    heroImage: '/products/power-station/hero-p8.png',
     accentColor: '#3FE0FE',
     specs: [
       { label: 'Capacity', value: '2048 Wh' },
@@ -580,7 +584,8 @@ export const spotlightProducts: SpotlightProduct[] = [
     id: 'power-adapter',
     name: '140W GaN Adapter',
     tagline: 'Maximum watts. Minimum footprint.',
-    heroImage: '/products/power-adapter/hero.png',
+    transparentImage: '/products/transparent/p9.png',
+    heroImage: '/products/power-adapter/hero-p9.png',
     accentColor: '#3F87FE',
     specs: [
       { label: 'Max Output', value: '140W' },
