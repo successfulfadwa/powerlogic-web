@@ -19,6 +19,7 @@ export interface CatalogProduct {
   name: string;
   tagline: string;
   description: string;
+  transparentImage: string;
   heroImage: string;
   gallery: string[];
   accentColor: string;
