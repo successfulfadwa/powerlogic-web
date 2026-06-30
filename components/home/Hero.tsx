@@ -52,7 +52,7 @@ export default function Hero() {
           <div className="flex flex-wrap items-center gap-4">
             <MagneticButton>
               <Link href="/products" className="btn-glow">
-                Shop Powerlogic
+                Our Products
                 <ArrowRight size={16} />
               </Link>
             </MagneticButton>

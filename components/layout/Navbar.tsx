@@ -33,13 +33,13 @@ export default function Navbar() {
   return (
     <>
       <motion.header
-        className="fixed top-0 left-0 right-0 z-[500] px-6 lg:px-12"
+        className="fixed top-0 left-0 right-0 z-[500] px-4 lg:px-8"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ delay: 1.2, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         <div
-          className="flex items-center justify-between"
+          className="flex items-center justify-between px-5 lg:px-8"
           style={{
             height: scrolled ? '62px' : '76px',
             background: scrolled
@@ -50,7 +50,7 @@ export default function Navbar() {
             borderBottom: scrolled
               ? '1px solid rgba(63,135,254,0.15)'
               : '1px solid rgba(255,255,255,0.06)',
-            borderRadius: '0 0 20px 20px',
+            borderRadius: '0 0 28px 28px',
             boxShadow: scrolled
               ? '0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06)'
               : '0 4px 24px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.04)',
@@ -133,7 +133,7 @@ export default function Navbar() {
 
             <MagneticButton data-cursor="Shop">
               <Link href="/products" className="btn-glow text-sm py-2.5 px-5">
-                Shop Now
+                Our Products
               </Link>
             </MagneticButton>
           </nav>
