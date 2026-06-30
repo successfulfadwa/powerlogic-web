@@ -92,7 +92,7 @@ function SpotlightModule({ product, index }: { product: SpotlightProduct; index:
                 }}
               />
               <Image
-                src={product.heroImage}
+                src={product.transparentImage}
                 alt={product.name}
                 width={500}
                 height={500}

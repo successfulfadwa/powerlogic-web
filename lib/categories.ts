@@ -13,7 +13,7 @@ export const categories: Category[] = [
     slug: 'scooter',
     name: 'E-Scooters',
     description: 'Dual-motor urban mobility, engineered for range',
-    heroImage: '/products/scooter/hero.png',
+    heroImage: '/products/scooter/1hero.png',
     available: true,
     accent: '#3F87FE',
     gridSpan: 'wide',
