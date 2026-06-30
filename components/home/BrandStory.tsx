@@ -113,7 +113,7 @@ export default function BrandStory() {
               }}
             >
               <Image
-                src="/brand/hero-bg-2.png"
+                src="/products/speaker/detail-p3.png"
                 alt="Powerlogic Speaker detail"
                 width={600}
                 height={700}
