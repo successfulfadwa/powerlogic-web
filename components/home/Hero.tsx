@@ -24,7 +24,7 @@ export default function Hero() {
         style={{ scale: bgScale, y: bgY }}
       >
         <Image
-          src="/brand/hero-bg-3.png"
+          src="/brand/hero-bg.png"
           alt="Powerlogic"
           fill
           priority
@@ -33,13 +33,49 @@ export default function Hero() {
         />
       </motion.div>
 
-      {/* Dark gradient overlay — bottom heavy so buttons sit on dark */}
+      {/* Dim overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'linear-gradient(to bottom, rgba(5,6,10,0.15) 0%, rgba(5,6,10,0.3) 50%, rgba(5,6,10,0.92) 100%)',
+          background:
+            'linear-gradient(to bottom, rgba(5,6,10,0.38) 0%, rgba(5,6,10,0.46) 42%, rgba(5,6,10,0.9) 100%)',
         }}
       />
+
+      {/* Top hero text */}
+      <div className="relative z-10 w-full flex-1 flex items-start">
+        <motion.div
+          className="max-w-7xl mx-auto px-6 lg:px-12 pt-28 lg:pt-36 w-full"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.35, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+        >
+          <div className="max-w-2xl">
+            <p
+              className="text-xs font-semibold tracking-[0.28em] uppercase mb-4"
+              style={{ color: 'rgba(255,255,255,0.72)' }}
+            >
+              Smart accessories for modern life
+            </p>
+            <h1
+              className="font-black leading-[0.95] mb-5"
+              style={{
+                fontSize: 'clamp(3rem, 8vw, 6.5rem)',
+                color: 'white',
+                textShadow: '0 10px 40px rgba(0,0,0,0.35)',
+              }}
+            >
+              Designed to keep up.
+            </h1>
+            <p
+              className="max-w-xl text-base lg:text-lg leading-relaxed"
+              style={{ color: 'rgba(255,255,255,0.76)' }}
+            >
+              Premium power, audio, and mobility essentials built for clean setups, long days, and life on the move.
+            </p>
+          </div>
+        </motion.div>
+      </div>
 
       {/* Bottom content — glass panel + buttons */}
       <div className="relative z-10 w-full pb-16">
@@ -47,7 +83,7 @@ export default function Hero() {
           className="max-w-7xl mx-auto px-6 lg:px-12"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.3, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+          transition={{ delay: 1.0, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <div className="flex flex-wrap items-center gap-4">
             <MagneticButton>

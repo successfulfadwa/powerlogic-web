@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, Mail, Share2, Globe, ExternalLink } from 'lucide-react';
+import { MapPin, Mail } from 'lucide-react';
 
 const productLinks = [
   { label: 'E-Scooters', href: '/products/scooter' },
@@ -31,7 +31,6 @@ export default function Footer() {
         boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.04)',
       }}
     >
-      {/* Glow accent */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px]"
         style={{
@@ -41,10 +40,15 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Brand column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center mb-5">
-              <Image src="/brand/logo-main.png" alt="Powerlogic" width={140} height={42} className="h-9 w-auto object-contain" />
+              <Image
+                src="/brand/logo-main.png"
+                alt="Powerlogic"
+                width={140}
+                height={42}
+                className="h-9 w-auto object-contain"
+              />
             </Link>
             <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--text-muted)' }}>
               Smart accessories engineered for how you actually live — on the road, at your desk, off the grid.
@@ -61,7 +65,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Products */}
           <div>
             <h4 className="text-sm font-semibold mb-5 tracking-wider uppercase" style={{ color: 'var(--text-primary)' }}>
               Products
@@ -83,7 +86,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h4 className="text-sm font-semibold mb-5 tracking-wider uppercase" style={{ color: 'var(--text-primary)' }}>
               Company
@@ -105,36 +107,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social + Since */}
           <div>
-            <h4 className="text-sm font-semibold mb-5 tracking-wider uppercase" style={{ color: 'var(--text-primary)' }}>
-              Follow Us
-            </h4>
-            <div className="flex gap-3 mb-8">
-              {[
-                { Icon: Share2, href: '#', label: 'Instagram' },
-                { Icon: Globe, href: '#', label: 'TikTok' },
-                { Icon: ExternalLink, href: '#', label: 'YouTube' },
-              ].map(({ Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  className="w-10 h-10 rounded-full flex items-center justify-center transition-all"
-                  style={{ background: 'var(--glass-fill)', border: '1px solid var(--glass-border)' }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = 'rgba(63,135,254,0.5)';
-                    (e.currentTarget as HTMLElement).style.boxShadow = '0 0 20px rgba(63,135,254,0.3)';
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = 'var(--glass-border)';
-                    (e.currentTarget as HTMLElement).style.boxShadow = 'none';
-                  }}
-                >
-                  <Icon size={16} style={{ color: 'var(--text-secondary)' }} />
-                </a>
-              ))}
-            </div>
             <div
               className="text-xs px-3 py-2 rounded-xl inline-block"
               style={{
@@ -148,15 +121,18 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div
           className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs"
           style={{ borderTop: '1px solid rgba(63,135,254,0.08)', color: 'var(--text-muted)' }}
         >
           <span>© 2021–2026 Powerlogic. All Rights Reserved.</span>
           <div className="flex gap-6">
-            <Link href="#" style={{ color: 'var(--text-muted)' }}>Privacy Policy</Link>
-            <Link href="#" style={{ color: 'var(--text-muted)' }}>Terms of Use</Link>
+            <Link href="#" style={{ color: 'var(--text-muted)' }}>
+              Privacy Policy
+            </Link>
+            <Link href="#" style={{ color: 'var(--text-muted)' }}>
+              Terms of Use
+            </Link>
           </div>
         </div>
       </div>
