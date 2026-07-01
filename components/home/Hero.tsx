@@ -24,7 +24,7 @@ export default function Hero() {
         style={{ scale: bgScale, y: bgY }}
       >
         <Image
-          src="/brand/hero-bg.png"
+          src="/brand/hero-bg-3.png"
           alt="Powerlogic"
           fill
           priority
