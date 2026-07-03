@@ -46,9 +46,9 @@ export const catalogProducts: CatalogProduct[] = [
     accentColor: '#3F87FE',
     specs: [
       { label: 'Drive System', value: 'Dual Motor' },
-      { label: 'Range', value: 'Up to 65 km' },
-      { label: 'Frame', value: 'Foldable Alloy' },
-      { label: 'Terrain', value: 'Off-Road Tires' },
+      { label: 'Range Per Charge', value: '80-100KM' },
+      { label: 'Max Load', value: '120 kg' },
+      { label: 'Battery Capacity', value: '23ah' },
     ],
     features: [
       'Stable daily commuting geometry',
@@ -102,9 +102,9 @@ export const catalogProducts: CatalogProduct[] = [
     accentColor: '#3FE0FE',
     specs: [
       { label: 'Capacity', value: '2048 Wh' },
-      { label: 'AC Output', value: '2200W Peak' },
+      { label: 'AC Output', value: '2400W Peak' },
       { label: 'Ports', value: '13 Outputs' },
-      { label: 'Charge Time', value: '1.8h Full Charge' },
+      { label: 'System Voltage', value: '51.2 V' },
     ],
     features: [
       'Useful for backup and travel',
@@ -129,10 +129,10 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#3F87FE',
     specs: [
-      { label: 'Max Output', value: '140W' },
-      { label: 'Technology', value: 'GaN III' },
+      { label: 'Max Output Power', value: '140W' },
+      { label: 'Max Output', value: '5V/3A' },
       { label: 'Ports', value: '3 USB-C + 1 USB-A' },
-      { label: 'Protocol', value: 'PD 3.1 / PPS' },
+      { label: 'Input', value: '100-240V/0.3A' },
     ],
     features: [
       'Made for powerful everyday charging',
@@ -159,8 +159,8 @@ export const catalogProducts: CatalogProduct[] = [
     specs: [
       { label: 'Capacity', value: '20,000mAh' },
       { label: 'Charging', value: 'Fast Charge' },
-      { label: 'Form', value: 'Portable' },
-      { label: 'Use', value: 'Daily Backup' },
+      { label: 'Battery Type', value: 'Li-Polymer Battery' },
+      { label: 'Output Power', value: '65 W' },
     ],
     features: [
       'Great balance of capacity and portability',
@@ -186,9 +186,9 @@ export const catalogProducts: CatalogProduct[] = [
     accentColor: '#3FE0FE',
     specs: [
       { label: 'Capacity', value: '20,000mAh' },
-      { label: 'Profile', value: 'Slim' },
-      { label: 'Portability', value: 'Pocket Friendly' },
-      { label: 'Use', value: 'Everyday Carry' },
+      { label: 'Charging', value: 'Fast Charge' },
+      { label: 'Battery Type', value: 'Li-Polymer Battery' },
+      { label: 'Output Power', value: '100 W' },
     ],
     features: [
       'Slim shape for easier carrying',
@@ -214,9 +214,9 @@ export const catalogProducts: CatalogProduct[] = [
     accentColor: '#3FE0FE',
     specs: [
       { label: 'Capacity', value: '25,000mAh' },
-      { label: 'Feature', value: 'Built-In Cables' },
       { label: 'Charging', value: 'Fast Charge' },
-      { label: 'Use', value: 'Travel Ready' },
+      { label: 'Battery Type', value: 'Li-Polymer Battery' },
+      { label: 'Output Power', value: '165 W' },
     ],
     features: [
       'Simplifies carry and cable management',
@@ -242,9 +242,9 @@ export const catalogProducts: CatalogProduct[] = [
     accentColor: '#3FE0FE',
     specs: [
       { label: 'Capacity', value: '24,000mAh' },
-      { label: 'Charge Mode', value: 'Fast Charge' },
-      { label: 'Output Focus', value: 'High Power' },
-      { label: 'Use', value: 'Long Trips' },
+      { label: 'Charging', value: 'Fast Charge' },
+      { label: 'Battery Type', value: 'Li-Polymer Battery' },
+      { label: 'Output Power', value: '280 W' },
     ],
     features: [
       'Good for users with heavier charging needs',
@@ -271,8 +271,8 @@ export const catalogProducts: CatalogProduct[] = [
     specs: [
       { label: 'Audio Mode', value: 'ANC' },
       { label: 'Connectivity', value: 'Wireless' },
-      { label: 'Use', value: 'Commute / Calls' },
-      { label: 'Style', value: 'Compact' },
+      { label: 'Waterproof Standard', value: 'IPX-4' },
+      { label: 'Battery Indicator', value: 'LED' },
     ],
     features: [
       'Good for work, travel, and daily use',
@@ -300,7 +300,7 @@ export const catalogProducts: CatalogProduct[] = [
       { label: 'Power', value: '100W' },
       { label: 'Use', value: 'Fast Charging' },
       { label: 'Type', value: 'USB-C' },
-      { label: 'Audience', value: 'Daily Users' },
+      { label: 'Length', value: '2M' },
     ],
     features: [
       'Simple product story for accessories pages',
@@ -325,10 +325,10 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#3F87FE',
     specs: [
-      { label: 'Format', value: '3-in-1' },
+      { label: 'Power', value: '100W' },
       { label: 'Use', value: 'Multi-device' },
-      { label: 'Style', value: 'Versatile' },
-      { label: 'Audience', value: 'Everyday Carry' },
+      { label: 'Type', value: 'All-in-one(type-c, micro usb, lightening)' },
+      { label: 'Length', value: '1.2M' },
     ],
     features: [
       'Ideal for users with mixed devices',
@@ -352,10 +352,10 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#3F87FE',
     specs: [
-      { label: 'Type', value: 'USB-C' },
-      { label: 'Display', value: 'Smart Screen' },
+      { label: 'Power', value: '100W' },
       { label: 'Use', value: 'Charging Feedback' },
-      { label: 'Audience', value: 'Power Users' },
+      { label: 'Type', value: 'USB-C' },
+      { label: 'Length', value: '2M' },
     ],
     features: [
       'Premium feel for accessory pages',
@@ -381,9 +381,9 @@ export const catalogProducts: CatalogProduct[] = [
     accentColor: '#3FE0FE',
     specs: [
       { label: 'Function', value: 'Mop + Vacuum' },
-      { label: 'Automation', value: 'Robot' },
+      { label: 'Dust Box Capacity', value: '1L' },
       { label: 'Use', value: 'Floor Care' },
-      { label: 'Style', value: 'Smart Home' },
+      { label: 'Max Runtime', value: '60 Min' },
     ],
     features: [
       'Strong for smart home product pages',
@@ -408,10 +408,10 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#3FE0FE',
     specs: [
-      { label: 'Surface', value: 'Glass' },
-      { label: 'Format', value: 'Robot Cleaner' },
+      { label: 'Function', value: 'Spray Glass Whipe' },
+      { label: 'Battery Capacity', value: '650mAH' },
       { label: 'Use', value: 'Windows' },
-      { label: 'Style', value: 'Specialized' },
+      { label: 'Max Runtime', value: '60 Min' },
     ],
     features: [
       'Great for specialty cleaning use cases',
@@ -437,9 +437,9 @@ export const catalogProducts: CatalogProduct[] = [
     accentColor: '#3FE0FE',
     specs: [
       { label: 'Function', value: 'Mop + Vacuum' },
-      { label: 'Format', value: 'Classic' },
-      { label: 'Use', value: 'Home Cleaning' },
-      { label: 'Style', value: 'Practical' },
+      { label: 'Water Tank Capacity', value: '600mL' },
+      { label: 'Use', value: 'Floor Care' },
+      { label: 'Max Runtime', value: '60 Min' },
     ],
     features: [
       'Easy to understand for shoppers',
@@ -464,10 +464,10 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#7B5CFF',
     specs: [
-      { label: 'Type', value: 'AI Box' },
+      { label: 'Connection', value: 'USB-C, HDMI' },
       { label: 'Use', value: 'Car Infotainment' },
-      { label: 'Style', value: 'Smart' },
-      { label: 'Audience', value: 'Drivers' },
+      { label: 'RAM', value: '8 GB' },
+      { label: 'Storage', value: '64 GB' },
     ],
     features: [
       'Good for smarter in-car experiences',
@@ -492,10 +492,10 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#7B5CFF',
     specs: [
-      { label: 'Type', value: 'Auto Cover' },
-      { label: 'Use', value: 'Protection' },
-      { label: 'Style', value: 'Convenient' },
-      { label: 'Audience', value: 'Car Owners' },
+      { label: 'Type', value: 'Automatic' },
+      { label: 'Function', value: 'UV Protection' },
+      { label: 'UV Block', value: '90%' },
+      { label: 'IR Block', value: '60%' },
     ],
     features: [
       'Useful for premium protection messaging',
@@ -521,9 +521,9 @@ export const catalogProducts: CatalogProduct[] = [
     accentColor: '#7B5CFF',
     specs: [
       { label: 'Function', value: 'Jump Start + Inflate' },
-      { label: 'Use', value: 'Road Safety' },
+      { label: 'Battery Capacity', value: '14800mAH' },
       { label: 'Format', value: 'Portable' },
-      { label: 'Audience', value: 'Drivers' },
+      { label: 'Total Output', value: '15W' },
     ],
     features: [
       'Strong emergency-use product story',
