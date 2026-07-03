@@ -17,6 +17,8 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
   const cat = categories.find((c) => c.slug === category);
   const item = getProduct(category, product);
 
+  if (!cat || !item) notFound();
+
   const [activeImage, setActiveImage] = useState<number | null>(null);
 
   const closeLightbox = () => setActiveImage(null);
@@ -36,8 +38,6 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [activeImage]);
-
-  if (!cat || !item) notFound();
 
   return (
     <div style={{ background: 'var(--bg-void)', minHeight: '100vh' }}>

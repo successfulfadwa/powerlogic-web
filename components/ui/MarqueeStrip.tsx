@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, ReactNode } from 'react';
+import { useState, ReactNode } from 'react';
 
 interface Props {
   children: ReactNode[];
@@ -30,6 +30,11 @@ export default function MarqueeStrip({
       onMouseLeave={() => setPaused(false)}
     >
       <style>{`
+        @keyframes marquee {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+
         @keyframes marquee-right {
           from { transform: translateX(-50%); }
           to { transform: translateX(0); }
