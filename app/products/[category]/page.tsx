@@ -125,20 +125,6 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
                     transform: 'scale(1.2)',
                   }}
                 />
-                <motion.div
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                >
-                  <Image
-                    src={cat.heroImage}
-                    alt={cat.name}
-                    width={500}
-                    height={500}
-                    className="w-full h-auto object-contain relative"
-                    style={{ filter: `drop-shadow(0 40px 80px ${cat.accent}40)` }}
-                    priority
-                  />
-                </motion.div>
               </div>
             </motion.div>
           </div>
