@@ -110,37 +110,7 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
               </div>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4, duration: 0.8 }}
-              className="flex justify-center"
-            >
-              <div className="relative w-full max-w-md">
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background: `radial-gradient(circle, ${cat.accent}25 0%, transparent 70%)`,
-                    filter: 'blur(40px)',
-                    transform: 'scale(1.2)',
-                  }}
-                />
-                <motion.div
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                >
-                  <Image
-                    src={cat.heroImage}
-                    alt={cat.name}
-                    width={500}
-                    height={500}
-                    className="w-full h-auto object-contain relative"
-                    style={{ filter: `drop-shadow(0 40px 80px ${cat.accent}40)` }}
-                    priority
-                  />
-                </motion.div>
-              </div>
-            </motion.div>
+          </div>
           </div>
         </div>
       </section>
