@@ -49,68 +49,66 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
             </span>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="text-xs font-semibold tracking-[0.2em] uppercase mb-4"
-                style={{ color: cat.accent }}
-              >
-                Powerlogic Catalog
-              </motion.p>
-              <h1
-                className="font-black leading-tight mb-6"
-                style={{ fontSize: 'var(--h1)', fontWeight: 900 }}
-              >
-                <SplitText by="words" delay={0.3} stagger={0.08}>
-                  {cat.name}
-                </SplitText>
-              </h1>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                className="leading-relaxed mb-8"
-                style={{ fontSize: 'var(--body-lg)', color: 'var(--text-secondary)' }}
-              >
-                Explore the products in this category, then open any product page for deeper details, visuals, and specs.
-              </motion.p>
+          <div className="max-w-3xl">
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="text-xs font-semibold tracking-[0.2em] uppercase mb-4"
+              style={{ color: cat.accent }}
+            >
+              Powerlogic Catalog
+            </motion.p>
 
-              <div className="grid grid-cols-2 gap-3 mb-8">
-                <div
-                  className="p-4 rounded-2xl"
-                  style={{
-                    background: 'var(--glass-fill)',
-                    border: `1px solid ${cat.accent}25`,
-                  }}
-                >
-                  <div className="text-xs mb-1 uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
-                    Products
-                  </div>
-                  <div className="font-bold" style={{ color: 'var(--text-primary)' }}>
-                    {products.length}
-                  </div>
+            <h1
+              className="font-black leading-tight mb-6"
+              style={{ fontSize: 'var(--h1)', fontWeight: 900 }}
+            >
+              <SplitText by="words" delay={0.3} stagger={0.08}>
+                {cat.name}
+              </SplitText>
+            </h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="leading-relaxed mb-8"
+              style={{ fontSize: 'var(--body-lg)', color: 'var(--text-secondary)' }}
+            >
+              Explore the products in this category, then open any product page for deeper details, visuals, and specs.
+            </motion.p>
+
+            <div className="grid grid-cols-2 gap-3 mb-8">
+              <div
+                className="p-4 rounded-2xl"
+                style={{
+                  background: 'var(--glass-fill)',
+                  border: `1px solid ${cat.accent}25`,
+                }}
+              >
+                <div className="text-xs mb-1 uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
+                  Products
                 </div>
-                <div
-                  className="p-4 rounded-2xl"
-                  style={{
-                    background: 'var(--glass-fill)',
-                    border: `1px solid ${cat.accent}25`,
-                  }}
-                >
-                  <div className="text-xs mb-1 uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
-                    Category
-                  </div>
-                  <div className="font-bold" style={{ color: 'var(--text-primary)' }}>
-                    {cat.name}
-                  </div>
+                <div className="font-bold" style={{ color: 'var(--text-primary)' }}>
+                  {products.length}
+                </div>
+              </div>
+              <div
+                className="p-4 rounded-2xl"
+                style={{
+                  background: 'var(--glass-fill)',
+                  border: `1px solid ${cat.accent}25`,
+                }}
+              >
+                <div className="text-xs mb-1 uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
+                  Category
+                </div>
+                <div className="font-bold" style={{ color: 'var(--text-primary)' }}>
+                  {cat.name}
                 </div>
               </div>
             </div>
-
-          </div>
           </div>
         </div>
       </section>
