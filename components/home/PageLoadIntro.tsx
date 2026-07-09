@@ -70,7 +70,7 @@ export default function PageLoadIntro() {
               </svg>
 
               {/* X crossbar SVG */}
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="absolute">
+              <svg width="30" height="40" viewBox="0 0 40 40" fill="none" className="absolute">
                 <motion.line
                   x1="8"
                   y1="8"
