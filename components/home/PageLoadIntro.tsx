@@ -20,58 +20,82 @@ export default function PageLoadIntro() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
-          {/* Logo X badge SVG animation */}
           <motion.div
-            initial={{ scale: 0.6, opacity: 0 }}
+            initial={{ scale: 0.72, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.4, ease: [0.34, 1.56, 0.64, 1] }}
-            className="relative"
+            transition={{ duration: 0.45, ease: [0.34, 1.56, 0.64, 1] }}
+            className="relative flex flex-col items-center justify-center"
           >
-            {/* Outer glow ring */}
+            {/* Subtle background accents behind the logo */}
             <motion.div
-              className="absolute inset-0 rounded-full"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [0, 1, 0] }}
-              transition={{ duration: 0.8, delay: 0.3, ease: 'easeInOut' }}
+              className="absolute -inset-10 rounded-full blur-3xl"
               style={{
-                background: 'transparent',
-                boxShadow: '0 0 60px rgba(63,135,254,0.7), 0 0 120px rgba(63,135,254,0.3)',
-                borderRadius: '50%',
+                background:
+                  'radial-gradient(circle, rgba(63,135,254,0.22) 0%, rgba(63,135,254,0.08) 35%, transparent 72%)',
               }}
+              animate={{ opacity: [0.45, 0.8, 0.45], scale: [0.98, 1.04, 0.98] }}
+              transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
             />
 
-            {/* Badge */}
             <motion.div
-              className="w-20 h-20 rounded-full flex items-center justify-center relative overflow-hidden"
+              className="absolute -inset-2 rounded-full border"
+              style={{ borderColor: 'rgba(255,255,255,0.08)' }}
+              animate={{ opacity: [0.35, 0.7, 0.35], scale: [1, 1.02, 1] }}
+              transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+            />
+
+            {/* Logo mark */}
+            <motion.div
+              className="relative flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden"
               style={{ background: '#3F87FE' }}
-              animate={{ boxShadow: ['0 0 0px rgba(63,135,254,0)', '0 0 60px rgba(63,135,254,0.8)', '0 0 20px rgba(63,135,254,0.4)'] }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              animate={{
+                boxShadow: [
+                  '0 0 0 rgba(63,135,254,0)',
+                  '0 0 36px rgba(63,135,254,0.55)',
+                  '0 0 18px rgba(63,135,254,0.28)',
+                ],
+              }}
+              transition={{ duration: 1.1, repeat: Infinity, ease: 'easeInOut' }}
             >
-              {/* X crossbar SVG */}
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <motion.line
-                  x1="8" y1="8" x2="32" y2="32"
-                  stroke="white"
-                  strokeWidth="4.5"
-                  strokeLinecap="round"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ duration: 0.35, delay: 0.2 }}
+              {/* Bigger white X behind */}
+              <motion.svg
+                viewBox="0 0 100 100"
+                className="absolute inset-0 w-full h-full"
+                initial={{ rotate: 0 }}
+                animate={{ rotate: 0 }}
+              >
+                <path
+                  d="M18 18 L42 18 L50 34 L58 18 L82 18 L60 50 L82 82 L58 82 L50 66 L42 82 L18 82 L40 50 Z"
+                  fill="white"
+                  opacity="1"
                 />
-                <motion.line
-                  x1="32" y1="8" x2="8" y2="32"
-                  stroke="white"
-                  strokeWidth="4.5"
-                  strokeLinecap="round"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ duration: 0.35, delay: 0.45 }}
+              </motion.svg>
+
+              {/* Blue X in front */}
+              <motion.svg
+                viewBox="0 0 100 100"
+                className="absolute inset-0 w-full h-full"
+                initial={{ rotate: 0 }}
+                animate={{ rotate: 0 }}
+              >
+                <path
+                  d="M30 30 L45 30 L50 39 L55 30 L70 30 L56 50 L70 70 L55 70 L50 61 L45 70 L30 70 L44 50 Z"
+                  fill="#3F87FE"
                 />
-              </svg>
+              </motion.svg>
+
+              {/* Small inner shine */}
+              <div
+                className="absolute inset-[14px] rounded-full pointer-events-none"
+                style={{
+                  background:
+                    'radial-gradient(circle at 50% 35%, rgba(255,255,255,0.20) 0%, rgba(255,255,255,0.06) 28%, transparent 62%)',
+                }}
+              />
             </motion.div>
           </motion.div>
 
-          {/* Brand name fade in */}
+          {/* Brand name below */}
           <motion.span
             className="absolute mt-28 text-base font-bold tracking-[0.3em] uppercase"
             style={{ color: 'rgba(245,246,248,0.4)', letterSpacing: '0.3em' }}
