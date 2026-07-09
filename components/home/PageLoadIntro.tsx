@@ -53,36 +53,50 @@ export default function PageLoadIntro() {
               }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              {/* Thicker white X behind */}
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="absolute">
+              {/* Bigger white X behind */}
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                className="absolute inset-0 w-full h-full"
+              >
                 <motion.line
-                  x1="8"
-                  y1="8"
-                  x2="32"
-                  y2="32"
+                  x1="7.5"
+                  y1="7.5"
+                  x2="32.5"
+                  y2="32.5"
                   stroke="white"
                   strokeWidth="6.5"
                   strokeLinecap="round"
+                  strokeLinejoin="round"
                   initial={{ pathLength: 0 }}
                   animate={{ pathLength: 1 }}
                   transition={{ duration: 0.35, delay: 0.2 }}
                 />
                 <motion.line
-                  x1="32"
-                  y1="8"
-                  x2="8"
-                  y2="32"
+                  x1="32.5"
+                  y1="7.5"
+                  x2="7.5"
+                  y2="32.5"
                   stroke="white"
                   strokeWidth="6.5"
                   strokeLinecap="round"
+                  strokeLinejoin="round"
                   initial={{ pathLength: 0 }}
                   animate={{ pathLength: 1 }}
                   transition={{ duration: 0.35, delay: 0.45 }}
                 />
               </svg>
 
-              {/* Front X in blue, same animation */}
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="absolute">
+              {/* Front blue X */}
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                className="absolute inset-0 w-full h-full"
+              >
                 <motion.line
                   x1="8"
                   y1="8"
@@ -91,6 +105,7 @@ export default function PageLoadIntro() {
                   stroke="#3F87FE"
                   strokeWidth="4.5"
                   strokeLinecap="round"
+                  strokeLinejoin="round"
                   initial={{ pathLength: 0 }}
                   animate={{ pathLength: 1 }}
                   transition={{ duration: 0.35, delay: 0.2 }}
@@ -103,6 +118,7 @@ export default function PageLoadIntro() {
                   stroke="#3F87FE"
                   strokeWidth="4.5"
                   strokeLinecap="round"
+                  strokeLinejoin="round"
                   initial={{ pathLength: 0 }}
                   animate={{ pathLength: 1 }}
                   transition={{ duration: 0.35, delay: 0.45 }}
