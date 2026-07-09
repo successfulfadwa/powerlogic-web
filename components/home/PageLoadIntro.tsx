@@ -44,68 +44,41 @@ export default function PageLoadIntro() {
             <motion.div
               className="w-20 h-20 rounded-full flex items-center justify-center relative overflow-hidden"
               style={{ background: '#3F87FE' }}
-              animate={{
-                boxShadow: [
-                  '0 0 0px rgba(63,135,254,0)',
-                  '0 0 60px rgba(63,135,254,0.8)',
-                  '0 0 20px rgba(63,135,254,0.4)',
-                ],
-              }}
+              animate={{ boxShadow: ['0 0 0px rgba(63,135,254,0)', '0 0 60px rgba(63,135,254,0.8)', '0 0 20px rgba(63,135,254,0.4)'] }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              {/* Bigger white X behind */}
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                className="absolute inset-0 w-full h-full"
-              >
-                <motion.line
-                  x1="7.5"
-                  y1="7.5"
-                  x2="32.5"
-                  y2="32.5"
-                  stroke="white"
-                  strokeWidth="6.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ duration: 0.35, delay: 0.2 }}
+              {/* Static thicker red back-strokes */}
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="absolute">
+                <line
+                  x1="8"
+                  y1="8"
+                  x2="32"
+                  y2="32"
+                  stroke="red"
+                  strokeWidth="7.5"
+                  strokeLinecap="butt"
                 />
-                <motion.line
-                  x1="32.5"
-                  y1="7.5"
-                  x2="7.5"
-                  y2="32.5"
-                  stroke="white"
-                  strokeWidth="6.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ duration: 0.35, delay: 0.45 }}
+                <line
+                  x1="32"
+                  y1="8"
+                  x2="8"
+                  y2="32"
+                  stroke="red"
+                  strokeWidth="7.5"
+                  strokeLinecap="butt"
                 />
               </svg>
 
-              {/* Front blue X */}
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                className="absolute inset-0 w-full h-full"
-              >
+              {/* X crossbar SVG */}
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="absolute">
                 <motion.line
                   x1="8"
                   y1="8"
                   x2="32"
                   y2="32"
-                  stroke="#3F87FE"
+                  stroke="white"
                   strokeWidth="4.5"
                   strokeLinecap="round"
-                  strokeLinejoin="round"
                   initial={{ pathLength: 0 }}
                   animate={{ pathLength: 1 }}
                   transition={{ duration: 0.35, delay: 0.2 }}
@@ -115,10 +88,9 @@ export default function PageLoadIntro() {
                   y1="8"
                   x2="8"
                   y2="32"
-                  stroke="#3F87FE"
+                  stroke="white"
                   strokeWidth="4.5"
                   strokeLinecap="round"
-                  strokeLinejoin="round"
                   initial={{ pathLength: 0 }}
                   animate={{ pathLength: 1 }}
                   transition={{ duration: 0.35, delay: 0.45 }}
