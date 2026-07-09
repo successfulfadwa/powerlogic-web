@@ -28,7 +28,7 @@ export default function Hero() {
           alt="Powerlogic"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-[center_38%] sm:object-center"
           sizes="100vw"
         />
       </motion.div>
@@ -38,19 +38,19 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'linear-gradient(to bottom, rgba(5,6,10,0.38) 0%, rgba(5,6,10,0.46) 42%, rgba(5,6,10,0.9) 100%)',
+            'linear-gradient(to bottom, rgba(5,6,10,0.36) 0%, rgba(5,6,10,0.44) 45%, rgba(5,6,10,0.9) 100%)',
         }}
       />
 
       {/* Top hero text */}
       <div className="relative z-10 w-full flex-1 flex items-start">
         <motion.div
-          className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-12 pt-24 sm:pt-28 lg:pt-36"
+          className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-12 pt-20 sm:pt-28 lg:pt-36"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <div className="max-w-2xl">
+          <div className="max-w-xl sm:max-w-2xl">
             <p
               className="text-[10px] sm:text-xs font-semibold tracking-[0.28em] uppercase mb-3 sm:mb-4"
               style={{ color: 'rgba(255,255,255,0.72)' }}
@@ -61,7 +61,7 @@ export default function Hero() {
             <h1
               className="font-black leading-[0.95] mb-4 sm:mb-5"
               style={{
-                fontSize: 'clamp(2.4rem, 10vw, 6.5rem)',
+                fontSize: 'clamp(2.25rem, 9vw, 6.5rem)',
                 color: 'white',
                 textShadow: '0 10px 40px rgba(0,0,0,0.35)',
               }}
