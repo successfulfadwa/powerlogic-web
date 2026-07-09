@@ -48,14 +48,14 @@ export default function PageLoadIntro() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               {/* Static thicker red back-strokes */}
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="absolute">
+              <svg width="60" height="60" viewBox="0 0 40 40" fill="none" className="absolute">
                 <line
                   x1="8"
                   y1="8"
                   x2="32"
                   y2="32"
-                  stroke="red"
-                  strokeWidth="7.5"
+                  stroke="white"
+                  strokeWidth="15"
                   strokeLinecap="butt"
                 />
                 <line
@@ -63,8 +63,8 @@ export default function PageLoadIntro() {
                   y1="8"
                   x2="8"
                   y2="32"
-                  stroke="red"
-                  strokeWidth="7.5"
+                  stroke="white"
+                  strokeWidth="15"
                   strokeLinecap="butt"
                 />
               </svg>
@@ -76,7 +76,7 @@ export default function PageLoadIntro() {
                   y1="8"
                   x2="32"
                   y2="32"
-                  stroke="white"
+                  stroke="#3F87FE"
                   strokeWidth="4.5"
                   strokeLinecap="round"
                   initial={{ pathLength: 0 }}
@@ -88,7 +88,7 @@ export default function PageLoadIntro() {
                   y1="8"
                   x2="8"
                   y2="32"
-                  stroke="white"
+                  stroke="#3F87FE"
                   strokeWidth="4.5"
                   strokeLinecap="round"
                   initial={{ pathLength: 0 }}
