@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex items-end overflow-hidden"
+      className="relative min-h-[100svh] flex flex-col justify-between overflow-hidden"
     >
       {/* Full-bleed background image with parallax */}
       <motion.div
@@ -45,30 +45,32 @@ export default function Hero() {
       {/* Top hero text */}
       <div className="relative z-10 w-full flex-1 flex items-start">
         <motion.div
-          className="max-w-7xl mx-auto px-6 lg:px-12 pt-28 lg:pt-36 w-full"
+          className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-12 pt-24 sm:pt-28 lg:pt-36"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <div className="max-w-2xl">
             <p
-              className="text-xs font-semibold tracking-[0.28em] uppercase mb-4"
+              className="text-[10px] sm:text-xs font-semibold tracking-[0.28em] uppercase mb-3 sm:mb-4"
               style={{ color: 'rgba(255,255,255,0.72)' }}
             >
               Smart accessories for modern life
             </p>
+
             <h1
-              className="font-black leading-[0.95] mb-5"
+              className="font-black leading-[0.95] mb-4 sm:mb-5"
               style={{
-                fontSize: 'clamp(3rem, 8vw, 6.5rem)',
+                fontSize: 'clamp(2.4rem, 10vw, 6.5rem)',
                 color: 'white',
                 textShadow: '0 10px 40px rgba(0,0,0,0.35)',
               }}
             >
               Designed to keep up.
             </h1>
+
             <p
-              className="max-w-xl text-base lg:text-lg leading-relaxed"
+              className="max-w-xl text-sm sm:text-base lg:text-lg leading-relaxed"
               style={{ color: 'rgba(255,255,255,0.76)' }}
             >
               Premium power, audio, and mobility essentials built for clean setups, long days, and life on the move.
@@ -77,15 +79,15 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Bottom content — glass panel + buttons */}
-      <div className="relative z-10 w-full pb-16">
+      {/* Bottom content */}
+      <div className="relative z-10 w-full pb-10 sm:pb-14 lg:pb-16">
         <motion.div
-          className="max-w-7xl mx-auto px-6 lg:px-12"
+          className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-12"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.0, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-3 sm:gap-4">
             <MagneticButton>
               <Link href="/products" className="btn-glow">
                 Our Products
@@ -111,7 +113,7 @@ export default function Hero() {
 
       {/* Scroll hint */}
       <motion.div
-        className="absolute bottom-8 right-8 lg:right-16 flex flex-col items-center gap-2"
+        className="hidden md:flex absolute bottom-8 right-8 lg:right-16 flex-col items-center gap-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8, duration: 0.6 }}
