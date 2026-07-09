@@ -230,7 +230,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8"
+            className="fixed inset-0 z-[1000] flex items-center justify-center p-4 sm:p-8"
             style={{ background: 'rgba(0,0,0,0.86)' }}
             onClick={closeLightbox}
             role="dialog"
@@ -239,8 +239,11 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
           >
             <button
               type="button"
-              onClick={closeLightbox}
-              className="absolute right-4 top-4 sm:right-6 sm:top-6 rounded-full p-3 bg-white/10 hover:bg-white/20 text-white transition-colors"
+              onClick={(e) => {
+                e.stopPropagation();
+                closeLightbox();
+              }}
+              className="absolute right-4 top-4 sm:right-6 sm:top-6 z-20 rounded-full p-3 bg-white/10 hover:bg-white/20 text-white transition-colors"
               aria-label="Close gallery"
             >
               <X size={22} />
@@ -254,7 +257,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
                   current === null ? current : (current - 1 + gallery.length) % gallery.length
                 );
               }}
-              className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 rounded-full p-3 bg-white/10 hover:bg-white/20 text-white transition-colors"
+              className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 rounded-full p-3 bg-white/10 hover:bg-white/20 text-white transition-colors"
               aria-label="Previous image"
             >
               <ArrowLeft size={24} />
@@ -266,7 +269,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
                 e.stopPropagation();
                 setActiveImageIndex((current) => (current === null ? current : (current + 1) % gallery.length));
               }}
-              className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 rounded-full p-3 bg-white/10 hover:bg-white/20 text-white transition-colors"
+              className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 rounded-full p-3 bg-white/10 hover:bg-white/20 text-white transition-colors"
               aria-label="Next image"
             >
               <ArrowRight size={24} />
@@ -277,7 +280,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.98, y: 8 }}
               transition={{ duration: 0.2 }}
-              className="relative w-full max-w-6xl h-[70vh] sm:h-[78vh]"
+              className="relative z-10 w-full max-w-6xl h-[70vh] sm:h-[78vh]"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
@@ -289,7 +292,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
               />
             </motion.div>
 
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full px-4 py-2 bg-white/10 text-white text-sm backdrop-blur">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 rounded-full px-4 py-2 bg-white/10 text-white text-sm backdrop-blur">
               {activeImageIndex + 1} / {gallery.length}
             </div>
           </motion.div>
