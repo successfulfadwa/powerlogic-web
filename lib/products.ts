@@ -466,7 +466,7 @@ export const catalogProducts: CatalogProduct[] = [
     specs: [
       { label: 'Connection', value: 'USB-C, HDMI' },
       { label: 'Use', value: 'Car Infotainment' },
-      { label: 'RAM', value: '8 GB' },
+      { label: 'RAM', value: '4 GB' },
       { label: 'Storage', value: '64 GB' },
     ],
     features: [
@@ -515,14 +515,14 @@ export const catalogProducts: CatalogProduct[] = [
     gallery: [
         '/products/car-accessories/jump-starter/hero-p18.png',
         '/products/car-accessories/jump-starter/alternate-p18.png',
-        '/products/car-accessories/jump-starter/detail-p18.png',
+        '/products/car-accessories/jump-starter/lifestyle-p18-2.png',
         '/products/car-accessories/jump-starter/lifestyle-p18.png',
     ],
     accentColor: '#7B5CFF',
     specs: [
       { label: 'Function', value: 'Jump Start + Inflate' },
       { label: 'Battery Capacity', value: '14800mAH' },
-      { label: 'Format', value: 'Portable' },
+      { label: 'Peak Current', value: '2000A' },
       { label: 'Total Output', value: '15W' },
     ],
     features: [
