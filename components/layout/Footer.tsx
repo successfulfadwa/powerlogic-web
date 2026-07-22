@@ -127,10 +127,10 @@ export default function Footer() {
         >
           <span>© 2021–2026 Powerlogic. All Rights Reserved.</span>
           <div className="flex gap-6">
-            <Link href="#" style={{ color: 'var(--text-muted)' }}>
+            <Link href="/privacy-policy" style={{ color: 'var(--text-muted)' }}>
               Privacy Policy
             </Link>
-            <Link href="#" style={{ color: 'var(--text-muted)' }}>
+            <Link href="/terms-of-use" style={{ color: 'var(--text-muted)' }}>
               Terms of Use
             </Link>
           </div>

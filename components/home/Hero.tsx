@@ -17,7 +17,22 @@ return (
 className="absolute inset-0"
 style={{ scale: bgScale, y: bgY }}
 >
-<Image src="/brand/hero-bg-3.png" alt="Powerlogic" fill priority className="object-cover object-[center_38%] sm:object-center" sizes="100vw" />
+<Image
+  src="/brand/hero-bg-3.png"
+  alt="Powerlogic"
+  fill
+  priority
+  className="hidden sm:block object-cover object-[center_38%] sm:object-center"
+  sizes="100vw"
+/>
+<Image
+  src="/brand/hero-bg-6.png"
+  alt="Powerlogic"
+  fill
+  priority
+  className="block sm:hidden object-cover object-center"
+  sizes="100vw"
+/>
 </motion.div>
   {/* Dim overlay */}
   <div

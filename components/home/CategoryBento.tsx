@@ -64,7 +64,7 @@ function CategoryCard({
               src={heroImage}
               alt={name}
               fill
-              className="object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500"
+              className="object-cover opacity-65 group-hover:opacity-80 transition-opacity duration-500"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
           </div>
@@ -73,7 +73,7 @@ function CategoryCard({
           <div
             className="absolute inset-0"
             style={{
-              background: `linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%)`,
+              background: `linear-gradient(135deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.18) 100%)`,
             }}
           />
 
