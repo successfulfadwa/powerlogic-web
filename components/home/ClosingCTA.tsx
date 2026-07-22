@@ -64,8 +64,7 @@ export default function ClosingCTA() {
         >
           {[
             { to: 10000, suffix: '+', label: 'Products Shipped' },
-            { to: 48, suffix: '/10', label: 'Average Rating', prefix: '' },
-            { to: 9, suffix: '', label: 'Product Lines' },
+            { to: 4.8, suffix: '/5', label: 'Average Rating', prefix: '' },
             { to: 5, suffix: ' yrs', label: 'London-Based' },
           ].map(({ to, suffix, label, prefix }) => (
             <div key={label} className="text-center">
