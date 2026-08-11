@@ -178,6 +178,9 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
                       <h3 className="text-lg font-bold mb-1" style={{ color: 'var(--text-primary)' }}>
                         {product.name}
                       </h3>
+                      <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: 'var(--text-muted)' }}>
+                        Model No. {product.modelNumber}
+                      </p>
                       <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--text-secondary)' }}>
                         {product.tagline}
                       </p>

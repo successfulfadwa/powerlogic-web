@@ -93,11 +93,14 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
               >
                 {cat.name}
               </motion.p>
-              <h1 className="font-black leading-tight mb-6" style={{ fontSize: 'var(--h1)', fontWeight: 900 }}>
+              <h1 className="font-black leading-tight mb-2" style={{ fontSize: 'var(--h1)', fontWeight: 900 }}>
                 <SplitText by="words" delay={0.3} stagger={0.08}>
                   {item.name}
                 </SplitText>
               </h1>
+              <p className="text-xs font-medium uppercase tracking-[0.16em] mb-6" style={{ color: 'var(--text-muted)' }}>
+                Model No. {item.modelNumber}
+              </p>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
