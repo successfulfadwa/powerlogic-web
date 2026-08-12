@@ -47,10 +47,12 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#3F87FE',
     specs: [
-      { label: 'Drive System', value: 'Dual Motor' },
+      { label: 'Drive System', value: 'Dual Motor (1200W)' },
       { label: 'Range Per Charge', value: '80-100KM' },
       { label: 'Max Load', value: '120 kg' },
-      { label: 'Battery Capacity', value: '23ah' },
+      { label: 'Battery Capacity', value: '23000mAh' },
+      {label: 'Brake', value: 'Front And Rear'},
+      {label: 'Charging Time', value: '7-8 h'},
     ],
     features: [
       'Stable daily commuting geometry',
@@ -78,8 +80,10 @@ export const catalogProducts: CatalogProduct[] = [
     specs: [
       { label: 'Sound Stage', value: '360° Surround' },
       { label: 'RGB Ring', value: '16M Colour' },
-      { label: 'Battery', value: '24-Hour Playback' },
+      { label: 'Battery Capacity', value: '10000mAh' },
+      { label: 'Playback Hours', value: '24 Hours' },
       { label: 'Connectivity', value: 'Bluetooth 5.3' },
+      { label: 'max output power', value: '300W' },
     ],
     features: [
       'Made for music, events, and casual listening',
@@ -109,6 +113,8 @@ export const catalogProducts: CatalogProduct[] = [
       { label: 'AC Output', value: '2400W Peak' },
       { label: 'Ports', value: '13 Outputs' },
       { label: 'System Voltage', value: '51.2 V' },
+      { label: 'Extra Features', value: 'Solar Panel Charging' },
+      { label: 'Battery Type', value: 'LiFePO4' },
     ],
     features: [
       'Useful for backup and travel',
@@ -134,8 +140,8 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#3F87FE',
     specs: [
-      { label: 'Max Output Power', value: '140W' },
-      { label: 'Max Output', value: '5V/3A' },
+      { label: 'Output Power', value: '140W / 100W / 67W' },
+      { label: 'Max Output', value: '5V/3A, 9V/2A, 9V/3A, 12/3A' },
       { label: 'Ports', value: '3 USB-C + 1 USB-A' },
       { label: 'Input', value: '100-240V/0.3A' },
     ],
@@ -163,7 +169,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#3FE0FE',
     specs: [
-      { label: 'Capacity', value: '20,000mAh' },
+      { label: 'Capacity', value: '10,000mAh' },
       { label: 'Charging', value: 'Fast Charge' },
       { label: 'Battery Type', value: 'Li-Polymer Battery' },
       { label: 'Output Power', value: '65 W' },
@@ -221,7 +227,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#3FE0FE',
     specs: [
-      { label: 'Capacity', value: '24,000mAh' },
+      { label: 'Capacity', value: '50,000mAh' },
       { label: 'Charging', value: 'Fast Charge' },
       { label: 'Battery Type', value: 'Li-Polymer Battery' },
       { label: 'Output Power', value: '280 W' },
@@ -254,6 +260,10 @@ export const catalogProducts: CatalogProduct[] = [
       { label: 'Connectivity', value: 'Wireless' },
       { label: 'Waterproof Standard', value: 'IPX-4' },
       { label: 'Battery Indicator', value: 'LED' },
+      { label: 'CPU', value: 'Qualcomm aptX' },
+      { label: 'Bluetooth Generation', value: '5.0' },
+      { label: 'Mic quantity', value: '2' },
+      { label: 'Battery Capacity', value: '500mAh' },
     ],
     features: [
       'Good for work, travel, and daily use',
@@ -441,7 +451,7 @@ export const catalogProducts: CatalogProduct[] = [
     name: 'Android AI Box',
     modelNumber: "pl-270",
     tagline: 'Upgrade your infotainment system.',
-    description: 'A smart car accessory that adds more flexibility, apps, and usability to your dashboard.',
+    description: 'A smart car accessory that turns your car screen to android system with Apple Carplay and Android Auto support.',
     transparentImage: '/products/transparent/p17.png',
     heroImage: '/products/car-accessories/ai-box/hero-p17.png',
     gallery: [
@@ -452,10 +462,12 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#7B5CFF',
     specs: [
-      { label: 'Connection', value: 'USB-C, HDMI' },
-      { label: 'Use', value: 'Car Infotainment' },
+      { label: 'Input', value: 'USB Type C' },
+      { label: 'Android Version', value: '14' },
       { label: 'RAM', value: '4 GB' },
       { label: 'Storage', value: '64 GB' },
+      { label: 'Output', value: 'HDMI' },
+      { label: 'External Drive Support', value: 'USB Type A'},
     ],
     features: [
       'Good for smarter in-car experiences',
@@ -510,9 +522,9 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     accentColor: '#7B5CFF',
     specs: [
-      { label: 'Function', value: 'Jump Start + Inflate' },
-      { label: 'Battery Capacity', value: '14800mAH' },
-      { label: 'Peak Current', value: '2000A' },
+      { label: 'Function', value: 'Jump Start + Inflate + Blower' },
+      { label: 'Battery Capacity', value: '28,000mAh' },
+      { label: 'Peak Current', value: '2500A' },
       { label: 'Total Output', value: '15W' },
     ],
     features: [
