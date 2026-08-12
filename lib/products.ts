@@ -155,7 +155,7 @@ export const catalogProducts: CatalogProduct[] = [
   {
     slug: '20000mah-power-bank',
     categorySlug: 'power-bank',
-    name: '20000mAh Power Bank',
+    name: 'Volt Power Bank',
     modelNumber: "pl-190",
     tagline: 'Reliable all-day backup.',
     description: 'A dependable high-capacity power bank for long days, travel, and backup charging.',
@@ -184,7 +184,7 @@ export const catalogProducts: CatalogProduct[] = [
   {
     slug: '20000mah-slim-power-bank',
     categorySlug: 'power-bank',
-    name: '20000mAh Slim Power Bank',
+    name: 'Edge Power Bank',
     modelNumber: "pl-192",
     tagline: 'Big capacity, slimmer profile.',
     description: 'A thinner form factor for users who want power without a bulky feel.',
@@ -213,7 +213,7 @@ export const catalogProducts: CatalogProduct[] = [
   {
     slug: '24000mah-fast-charge-power-bank',
     categorySlug: 'power-bank',
-    name: '24000mAh Fast Charge Power Bank',
+    name: 'Titan Power Bank',
     modelNumber: "pl-191",
     tagline: 'High capacity for longer trips.',
     description: 'A high-output power bank focused on endurance, speed, and staying powered for longer.',
